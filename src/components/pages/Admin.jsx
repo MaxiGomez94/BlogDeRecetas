@@ -1,9 +1,15 @@
-import { Button, Table,} from 'react-bootstrap';
+import { Button, Container, Table,} from 'react-bootstrap';
 import ItemRecipes from './recipes/ItemRecipes';
 import { Link } from 'react-router-dom';
 const Admin = () => {
   return (
-      <Table className='container'>
+    <Container>
+      <div className=' text-center d-flex justify-content-between align-items-center mt-4'>
+        <h1>Administrador De Recetas</h1>
+      <Button as={Link} to='/formrecipes/crear'>Nueva Recetas</Button>
+
+      </div>
+      <Table className='table-responsive'>
       <thead>
         <tr>
           <th>Código</th>
@@ -17,8 +23,8 @@ const Admin = () => {
       <tbody>
         <ItemRecipes/>
       </tbody>
-        <Button as={Link} to='/formrecipes/crear'>Nueva Recetas</Button>
     </Table>
+    </Container>
   );
 };
 
