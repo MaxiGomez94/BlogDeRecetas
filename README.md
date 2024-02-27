@@ -33,3 +33,5 @@
 
 ## Para iniciar jason server
 1.**$ npx json-server db.json
+
+2
