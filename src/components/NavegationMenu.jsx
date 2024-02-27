@@ -14,9 +14,9 @@ function NavegationMenu() {
         <Navbar.Collapse id="basic-navbar-nav" className="" >
           <Nav className=" ms-auto me-5 m ">
             <NavLink end  to='/' className=" text-light nav-link">Home</NavLink>
-            <NavLink end to='/admin' className=" text-light nav-link">Admin</NavLink>
-            <NavLink className=" text-light nav-link">Login</NavLink>
-            <NavLink className=" text-light nav-link">Register</NavLink>
+            <NavLink end to='/formrecipes' className=" text-light nav-link">Admin</NavLink>
+            <NavLink end to='/login' className=" text-light nav-link">Login</NavLink>
+            <NavLink end to='/register' className=" text-light nav-link">Register</NavLink>
           </Nav>
         </Navbar.Collapse>
       </Container>
