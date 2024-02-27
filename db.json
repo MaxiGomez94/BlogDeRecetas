@@ -5,7 +5,7 @@
             "nombreRecetas": "Tortilla De papa",
             "ingredientes": "huevo,papa,jamon,queso",
             "descripcion": "tortilla de papa la mejor",
-            "intrucciones" : "cocinar a fuego lento,minimo 30 min",
+            "instrucciones" : "cocinar a fuego lento,minimo 30 min",
             "imagen": "url",
             "disponible": true
         }

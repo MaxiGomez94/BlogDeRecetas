@@ -90,7 +90,7 @@ const FormRecipes = () => {
           <Form.Control
             as="textarea"
             placeholder="Ingresa las instrucciones"
-            {...register("intrucciones", {
+            {...register("instrucciones", {
               required: "carga las intrucciones de cocion",
               minLength: {
                 value: 4,
@@ -103,7 +103,7 @@ const FormRecipes = () => {
             })}
           />
           <Form.Text className="text-danger">
-            {errors.intrucciones?.message}
+            {errors.instrucciones?.message}
           </Form.Text>
         </Form.Group>
 
