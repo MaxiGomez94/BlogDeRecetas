@@ -15,12 +15,12 @@ const CardRecetas = ({ receta }) => {
   };
 
   return (
-    <Col md={5} lg={4} xxl={3} className="py-2">
+    <Col md={5} lg={4} xxl={3} className="py-2 ">
       <Card className="border-0 mt-2 card-media">
         <Card.Img
           variant="top"
           src={receta.imagen}
-          className="img-fluid img-card"
+          className="img-fluid img-card "
         />
         <Card.Body>
           <Card.Title>{receta.nombreRecetas}</Card.Title>
