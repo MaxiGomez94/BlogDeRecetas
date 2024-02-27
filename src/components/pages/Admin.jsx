@@ -6,7 +6,7 @@ const Admin = () => {
     <Container>
       <div className=' text-center d-flex justify-content-between align-items-center mt-4'>
         <h1>Administrador De Recetas</h1>
-      <Button as={Link} to='/formrecipes/crear'>Nueva Recetas</Button>
+      <Button as={Link} to='/admin/formRecipes'>Nueva Recetas</Button>
 
       </div>
       <Table className='table-responsive'>

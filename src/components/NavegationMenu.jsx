@@ -10,11 +10,11 @@ function NavegationMenu() {
     <Navbar expand="lg" className="bg-nav py-0">
       <Container fluid >
         <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: 'white' }} />
-        <Navbar.Brand as={Link} to='/' className=" img-brand ms-3 img-fluid w-50 "><img src={Logo} alt="logo cheft"  /></Navbar.Brand>
+        <Navbar.Brand as={Link} to='/' className=" img-brand p-0 img-fluid w-50 "><img src={Logo} alt="logo cheft"  /></Navbar.Brand>
         <Navbar.Collapse id="basic-navbar-nav" className="" >
           <Nav className=" ms-auto me-5 m ">
             <NavLink end  to='/' className=" text-light nav-link">Home</NavLink>
-            <NavLink end to='/formrecipes' className=" text-light nav-link">Admin</NavLink>
+            <NavLink end to='/admin' className=" text-light nav-link">Admin</NavLink>
             <NavLink className=" text-light nav-link">Login</NavLink>
             <NavLink className=" text-light nav-link">Register</NavLink>
           </Nav>

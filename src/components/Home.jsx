@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <section>
         <h1 className="text-center">El Codigo de la cocina</h1>
-      <Row className="  justify-content-around  container   mx-auto ">
+      <Row className="  justify-content-around  container  mx-auto">
         <CardRecetas></CardRecetas>
         <CardRecetas></CardRecetas>
         <CardRecetas></CardRecetas>
