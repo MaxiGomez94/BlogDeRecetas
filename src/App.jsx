@@ -5,6 +5,8 @@ import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import FormRecipes from './components/pages/FormRecipes'
 import './App.css'
 import Admin from './components/pages/Admin'
+import Login from './components/pages/Login'
+import Register from './components/pages/Register'
 
 function App() {
 
@@ -14,8 +16,10 @@ function App() {
       <main>
     <Routes>
     <Route exact path='/' element ={<Home/>}></Route>
-    <Route exact path='/admin' element ={<Admin/>}></Route>
-    <Route exact path='/admin/formRecipes' element ={<FormRecipes/>}></Route>
+    <Route exact path='/formrecipes' element ={<Admin/>}></Route>
+    <Route exact path='/formrecipes/crear' element ={<FormRecipes/>}></Route>
+    <Route exact path='/login'element={ <Login/>}  />
+    <Route exact path='/register'element={ <Register/>}  />
     </Routes>
       </main> 
     <Footer></Footer>
