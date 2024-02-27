@@ -3,13 +3,13 @@ import ItemRecipes from './recipes/ItemRecipes';
 import { Link } from 'react-router-dom';
 const Admin = () => {
   return (
-    <Container>
+    <Container className=' table-responsive'>
       <div className=' text-center d-flex justify-content-between align-items-center mt-4'>
         <h1>Administrador De Recetas</h1>
       <Button as={Link} to='/admin/formRecipes'>Nueva Recetas</Button>
 
       </div>
-      <Table className='table-responsive'>
+      <Table>
       <thead>
         <tr>
           <th>Código</th>
@@ -17,6 +17,7 @@ const Admin = () => {
           <th>URL</th>
           <th>Ingredientes</th>
           <th>Descripción</th>
+          <th>Instrucciones</th>
           <th>Opciones</th>
         </tr>
       </thead>

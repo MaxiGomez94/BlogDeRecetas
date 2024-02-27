@@ -16,6 +16,7 @@ const ItemRecipes = () => {
       </td>
       <td>huevos,papa,aceite,</td>
       <td>La Tortilla de papa es un manjar</td>
+      <td>cocinar a fuego lento 20 minutos</td>
       <td>
         <Button variant="warning" className="me-lg-2">
             editar
