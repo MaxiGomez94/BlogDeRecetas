@@ -3,7 +3,7 @@ import { Container,Form,FormControl,FormGroup} from 'react-bootstrap';
 
 const Login = () => {
     return (
-        <Container className='p-3 my-5 d-flex flex-column w-50'>
+        <Container className='p-3 my-5 d-flex flex-column w-25'>
 
         <Form>
             <FormGroup >

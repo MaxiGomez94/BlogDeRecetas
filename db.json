@@ -1,19 +1,76 @@
 {
-    "Recetas": [
-        {
-            "id": "1",
-            "nombreRecetas": "Tortilla De papa",
-            "ingredientes": "huevo,papa,jamon,queso",
-            "descripcion": "tortilla de papa la mejor",
-            "instrucciones" : "cocinar a fuego lento,minimo 30 min",
-            "imagen": "url",
-            "disponible": true
-        }
-    ],
-    "usuarios": [
-        {
-            "email": "admin@mail.com",
-            "password": "1234"
-        }
-    ]
+  "Recetas": [
+    {
+      "nombreRecetas": "Tortilla De papa",
+      "ingredientes": "huevo,papa,jamon,queso",
+      "descripcion": "tortilla de papa la mejor",
+      "instrucciones": "cocinar a fuego lento,minimo 30 min",
+      "imagen": "url",
+      "disponible": true,
+      "id": "1"
+    },
+    {
+      "id": "bcfb",
+      "nombreRecetas": "maxii",
+      "imagen": "receta 43",
+      "ingredientes": "comida de tal",
+      "instrucciones": "holaa y chau",
+      "descripcion": "noceee no me acuerdo"
+    },
+    {
+      "id": "48b1",
+      "nombreRecetas": "aaaaaaa",
+      "imagen": "receta 43",
+      "ingredientes": "aaaaa",
+      "instrucciones": "aaaaaaaaa",
+      "descripcion": "aaaaaaaaa"
+    },
+    {
+      "id": "93ba",
+      "nombreRecetas": "aaaaaaa",
+      "imagen": "receta 43",
+      "ingredientes": "aaaaa",
+      "instrucciones": "aaaaaaaaa",
+      "descripcion": "aaaaaaaaa"
+    },
+    {
+      "id": "cd64",
+      "nombreRecetas": "reaaaa",
+      "imagen": "aaaaa",
+      "ingredientes": "aaaaaaaaa",
+      "instrucciones": "aaaaaaaaaa",
+      "descripcion": "aaaaaaaaaaa"
+    },
+    {
+      "id": "3c98",
+      "nombreRecetas": "LA PUTA DE TU HERMAN",
+      "imagen": "AAAAAAA",
+      "ingredientes": "AAAAAAAA",
+      "instrucciones": "AAAAAAAA",
+      "descripcion": "AAAAAA"
+    },
+    {
+      "id": "27d3",
+      "nombreRecetas": "aaaaaaa",
+      "imagen": "aaaaaaaaa",
+      "ingredientes": "aaaaaaaaa",
+      "instrucciones": "aaaaaaaaaa",
+      "descripcion": "aaaaaaaa"
+    },
+    {
+      "id": "f976",
+      "nombreRecetas": "claudia",
+      "imagen": "aaaaaaaaaaa",
+      "ingredientes": "aaaaaaaaaaaaaa",
+      "instrucciones": "aaaaaaaaaaaa",
+      "descripcion": "aaaaaaaaaaaaaa"
+    }
+  ],
+  "usuarios": [
+    {
+      "email": "admin@mail.com",
+      "password": "1234",
+      "id": "3926"
+    }
+  ]
 }

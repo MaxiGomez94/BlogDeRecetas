@@ -1,16 +1,37 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { altaDeRecetasApi } from "../../helpers/queris";
+import Swal from "sweetalert2";
+
 
 const FormRecipes = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
 
-  const onSubmit = recetas => {
-    console.log(recetas);
-  };
+  const onSubmit = async (recetas) => {
+
+   const respuesta= await altaDeRecetasApi(recetas)
+
+   if (respuesta.status === 201) {
+    Swal.fire({
+      title: "Receta Cargada!",
+      text: `La Receta "${recetas.nombreRecetas}" fue cargada correctamente`,
+      icon: "success"
+    });
+    // limpiar formulario
+    reset()
+  } else {
+    Swal.fire({
+      title: "Receta no cargada",
+      text: `La Receta "${recetas.nombreRecetas}" no pudo ser creada, intentelo mas tarde!`,
+      icon: "error"
+    });
+  }
+};
 
   return (
     <>

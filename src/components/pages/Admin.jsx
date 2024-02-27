@@ -1,7 +1,26 @@
 import { Button, Container, Table,} from 'react-bootstrap';
 import ItemRecipes from './recipes/ItemRecipes';
 import { Link } from 'react-router-dom';
+import { useState,useEffect } from 'react';
+import { mostraRecetaAPI } from '../../helpers/queris';
+
 const Admin = () => {
+
+  const [receta,setReceta]= useState([]);
+  
+  useEffect(()=>{
+    obtnerRecetas();
+   
+  },[])
+
+  const obtnerRecetas = async()=>{
+    const respuesta= await mostraRecetaAPI();
+    if(respuesta.status === 200){
+     const  datos = await respuesta.json()
+     setReceta(datos)
+    }
+  }
+
   return (
     <Container className=' table-responsive'>
       <div className=' text-center d-flex justify-content-between align-items-center mt-4'>
