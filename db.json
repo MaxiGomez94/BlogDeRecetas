@@ -1,69 +1,29 @@
 {
   "Recetas": [
     {
-      "nombreRecetas": "Tortilla De papa",
+      "nombreRecetas": "Tortilla De Papa",
       "ingredientes": "huevo,papa,jamon,queso",
-      "descripcion": "tortilla de papa la mejor",
+      "descripcion": "La tortilla de papa es un plato español hecho con papas, huevos y cebolla, cocinado en una sartén hasta que queda dorado y cuajado. Es un plato popular y versátil.",
       "instrucciones": "cocinar a fuego lento,minimo 30 min",
-      "imagen": "url",
+      "imagen": "https://www.clarin.com/img/2022/05/16/W9sHDNg6p_1256x620__2.jpg",
       "disponible": true,
       "id": "1"
     },
     {
-      "id": "bcfb",
-      "nombreRecetas": "maxii",
-      "imagen": "receta 43",
-      "ingredientes": "comida de tal",
-      "instrucciones": "holaa y chau",
-      "descripcion": "noceee no me acuerdo"
+      "id": "95fa",
+      "nombreRecetas": "Milanesa Con Papas",
+      "imagen": "https://media.lmneuquen.com/p/7e0c76e74c99f6ec8c82e3fb61c43116/adjuntos/195/imagenes/005/541/0005541097/1200x675/smart/milanesas-a-caballojpg.jpg",
+      "ingredientes": "    Filetes de carne (pollo, ternera o cerdo)\n    Pan rallado\n    Harina\n    Huevos\n    Sal y pimienta al gusto\n    Papas\n    Aceite para freír",
+      "instrucciones": "    Prepara los filetes de carne, asegurándote de que estén limpios y secos.\n    En tres platos diferentes, coloca harina en uno, huevos batidos en otro y pan rallado en el último.\n    Pasa cada filete primero por la harina, luego por los huevos batidos y finalmente por el pan rallado, asegurándote de que estén bien cubiertos.\n    Calienta aceite en una sartén a fuego medio-alto.\n    Fríe los filetes empanizados hasta que estén dorados por ambos lados y bien cocidos por dentro.\n    Mientras se fríen las milanesas, pela y corta las papas en forma de bastones para las papas fritas.\n    Fríe las papas en el mismo aceite hasta que estén doradas y crujientes.\n    Retira las milanesas y papas fritas del aceite y colócalas sobre papel absorbente para eliminar el exceso de grasa.",
+      "descripcion": "Una deliciosa combinación de milanesa crujiente por fuera y tierna por dentro, acompañada de papas fritas doradas. ¡Un clásico que nunca pasa de moda, perfecto para satisfacer tus antojos de comfort food! 🍖🍟 ¡Disfruta de esta receta fácil y deliciosa!"
     },
     {
-      "id": "48b1",
-      "nombreRecetas": "aaaaaaa",
-      "imagen": "receta 43",
-      "ingredientes": "aaaaa",
-      "instrucciones": "aaaaaaaaa",
-      "descripcion": "aaaaaaaaa"
-    },
-    {
-      "id": "93ba",
-      "nombreRecetas": "aaaaaaa",
-      "imagen": "receta 43",
-      "ingredientes": "aaaaa",
-      "instrucciones": "aaaaaaaaa",
-      "descripcion": "aaaaaaaaa"
-    },
-    {
-      "id": "cd64",
-      "nombreRecetas": "reaaaa",
-      "imagen": "aaaaa",
-      "ingredientes": "aaaaaaaaa",
-      "instrucciones": "aaaaaaaaaa",
-      "descripcion": "aaaaaaaaaaa"
-    },
-    {
-      "id": "3c98",
-      "nombreRecetas": "LA PUTA DE TU HERMAN",
-      "imagen": "AAAAAAA",
-      "ingredientes": "AAAAAAAA",
-      "instrucciones": "AAAAAAAA",
-      "descripcion": "AAAAAA"
-    },
-    {
-      "id": "27d3",
-      "nombreRecetas": "aaaaaaa",
-      "imagen": "aaaaaaaaa",
-      "ingredientes": "aaaaaaaaa",
-      "instrucciones": "aaaaaaaaaa",
-      "descripcion": "aaaaaaaa"
-    },
-    {
-      "id": "f976",
-      "nombreRecetas": "claudia",
-      "imagen": "aaaaaaaaaaa",
-      "ingredientes": "aaaaaaaaaaaaaa",
-      "instrucciones": "aaaaaaaaaaaa",
-      "descripcion": "aaaaaaaaaaaaaa"
+      "id": "4f62",
+      "nombreRecetas": "Pollo a la parrilla",
+      "imagen": "https://www.clarin.com/img/2022/03/21/LeCTEz82B_1200x630__1.jpg",
+      "ingredientes": " \"4 pechugas de pollo\",\n    \"2 cucharadas de aceite de oliva\",\n    \"Sal y pimienta al gusto\",\n    \"Jugo de limón\"",
+      "instrucciones": " \"Sazonar las pechugas de pollo con sal, pimienta y jugo de limón.\",\n    \"Dejar marinar durante 30 minutos.\",\n    \"Cocinar a la parrilla hasta que estén doradas y bien cocidas.\"",
+      "descripcion": "Una deliciosa receta de pollo a la parrilla con un toque de limón, perfecta para disfrutar en una comida al aire libre."
     }
   ],
   "usuarios": [

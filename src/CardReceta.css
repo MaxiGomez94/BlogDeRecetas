@@ -1,5 +1,6 @@
 .card-media img{
  filter: drop-shadow(5px 5px 5px red);
  box-shadow: 5px 5px 5px black;
+ max-width: 100%;
 }
 

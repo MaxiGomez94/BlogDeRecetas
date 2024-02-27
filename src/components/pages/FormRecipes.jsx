@@ -74,7 +74,7 @@ const FormRecipes = () => {
                 message: "minimo de caracter es de 4",
               },
               maxLength: {
-                value: 20,
+                value: 100,
                 message: "maximo permitido es de 20",
               },
             })}
@@ -96,7 +96,7 @@ const FormRecipes = () => {
                 message: "minimo de caracter es de 4",
               },
               maxLength: {
-                value: 20,
+                value: 200,
                 message: "maximo permitido es de 20",
               },
             })}
@@ -118,8 +118,8 @@ const FormRecipes = () => {
                 message: "minimo de caracter es de 4",
               },
               maxLength: {
-                value: 20,
-                message: "maximo permitido es de 20",
+                value: 1000,
+                message: "maximo permitido es de 1000",
               },
             })}
           />
@@ -140,7 +140,7 @@ const FormRecipes = () => {
                 message: "minimo de caracter es de 4",
               },
               maxLength: {
-                value: 20,
+                value: 300,
                 message: "maximo permitido es de 20",
               },
             })}

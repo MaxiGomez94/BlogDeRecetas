@@ -3,6 +3,7 @@ import ItemRecipes from './recipes/ItemRecipes';
 import { Link } from 'react-router-dom';
 import { useState,useEffect } from 'react';
 import { mostraRecetaAPI } from '../../helpers/queris';
+import Swal from 'sweetalert2';
 
 const Admin = () => {
 
@@ -18,6 +19,12 @@ const Admin = () => {
     if(respuesta.status === 200){
      const  datos = await respuesta.json()
      setReceta(datos)
+    }else{
+      Swal.fire({
+        title: "Receta no cargada",
+        text: `La Receta "${recetas.nombreRecetas}" no pudo ser creada, intentelo mas tarde!`,
+        icon: "error"
+      });
     }
   }
 
@@ -41,7 +48,9 @@ const Admin = () => {
         </tr>
       </thead>
       <tbody>
-        <ItemRecipes/>
+        {
+          receta.map((receta)=> <ItemRecipes key={receta} receta={receta} />)
+        }
       </tbody>
     </Table>
     </Container>
