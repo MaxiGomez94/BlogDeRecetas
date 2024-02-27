@@ -1,0 +1,18 @@
+{
+    "Recetas": [
+        {
+            "id": "1",
+            "NombreRecetas": "Tortilla De papa",
+            "Ingredientes": "huevo,papa,jamon,queso",
+            "Descripcion-Breve": "tortilla de papa la mejor",
+            "imagen": "url",
+            "disponible": true
+        }
+    ],
+    "usuarios": [
+        {
+            "email": "admin@mail.com",
+            "password": "1234"
+        }
+    ]
+}

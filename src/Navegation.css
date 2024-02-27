@@ -1,0 +1,9 @@
+.img-brand img{
+    filter: brightness(0) invert(1);
+    height: 100%;
+    width: 130px;
+}
+
+.img-footer img{
+    filter: brightness(0) invert(1);
+}
