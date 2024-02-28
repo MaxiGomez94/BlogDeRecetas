@@ -34,6 +34,7 @@
 
 ## Para iniciar jason server
 1.**$ npx json-server db.json
-
+<hr>
 #Deploy
+
 1**https://delicias-en-la-mesa.netlify.app/
