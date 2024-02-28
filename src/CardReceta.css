@@ -1,0 +1,8 @@
+.card-media img{
+ filter: drop-shadow(5px 5px 5px red);
+ box-shadow: 5px 5px 5px black;
+ height:300px;
+ 
+ object-fit:cover;
+}
+

@@ -1,8 +1,38 @@
-# React + Vite
+# Blog  Recetas de Cocina con React y JSON Server
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido al Blog de Cocina! Este proyecto es un sitio web de blogs de cocina desarrollado con React y utiliza JSON Server como backend simulado para almacenar datos de recetas.
 
-Currently, two official plugins are available:
+## Herramientas Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- React-bootstrap
+- React-router-dom
+- React-hook-form
+- JSON Server
+- Sweetalert 2
+- 
+
+## Cómo Clonar e Instalar
+
+1. **Clonar el Repositorio:**
+   gitbash o cmd
+   git clone https://github.com/MaxiGomez94/BlogDeRecetas.git
+<hr>
+
+## Instalar Dependencias
+
+1.** nmp install
+
+2.** npm install json-server
+
+<hr>
+
+## Para iniciar React 
+1.** nmp run dev
+ 
+<hr>
+
+## Para iniciar jason server
+1.**$ npx json-server db.json
+
+2

@@ -1,0 +1,11 @@
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+.bg-nav{
+    background-color: rgba(0, 139, 139, 0.87);
+}
