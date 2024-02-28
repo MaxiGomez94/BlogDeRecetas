@@ -62,3 +62,17 @@ export const obtenerRecetaAPI = async (id) => {
     } catch (error) {
     }
   }
+
+  const userAdmin ={
+    email: "admin@recetasblog.com",
+    password: "Admin1234"
+  }
+  export const iniciarSesion =(usuario)=>{
+    if(usuario.email === userAdmin.email && usuario.password === userAdmin.password){
+      sessionStorage.setItem('loginReceta', JSON.stringify(userAdmin.email));
+      return true
+    }else{
+
+      return false
+    }
+  }
