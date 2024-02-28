@@ -1,8 +1,8 @@
 import { Button } from "react-bootstrap";
 import Swal from "sweetalert2";
 import { borrarRecetaAPI, mostraRecetaAPI } from "../../../helpers/queris";
+import { Link } from "react-router-dom";
 const ItemRecipes = ({receta,funcionSetReceta}) => {
-
   const borrarRecetas= ()=>{
     Swal.fire({
       title: "Estas Seguro de Eliminar la Receta?",
@@ -64,7 +64,7 @@ const ItemRecipes = ({receta,funcionSetReceta}) => {
       <td>{receta.descripcion}</td>
       <td>{receta.instrucciones}</td>
       <td>
-        <Button variant="warning" className="me-lg-2">editar</Button>
+        <Link   className="me-lg-2 btn btn-warning" to={'/admin/edit/'+ receta.id}>editar</Link>
         <Button variant="danger" onClick={borrarRecetas}> delete</Button>
       </td>
     </tr>

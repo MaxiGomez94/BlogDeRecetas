@@ -1,41 +1,68 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { altaDeRecetasApi } from "../../helpers/queris";
+import { altaDeRecetasApi, obtenerRecetaAPI } from "../../helpers/queris";
 import Swal from "sweetalert2";
+import { useEffect } from "react";
+import { useParams } from "react-router";
 
-
-const FormRecipes = () => {
+const FormRecipes = ({ editar,titulo }) => {
   const {
+    //ESTO ES DE REACT FORM
     register,
     handleSubmit,
     formState: { errors },
-    reset
+    reset,
+    setValue,
   } = useForm();
 
-  const onSubmit = async (recetas) => {
+const {id}= useParams();
 
-   const respuesta= await altaDeRecetasApi(recetas)
+useEffect(()=>{
+if(editar){
+  cargarRecetas()
+ 
+}
+},[])
 
-   if (respuesta.status === 201) {
-    Swal.fire({
-      title: "Receta Cargada!",
-      text: `La Receta "${recetas.nombreRecetas}" fue cargada correctamente`,
-      icon: "success"
-    });
-    // limpiar formulario
-    reset()
-  } else {
-    Swal.fire({
-      title: "Receta no cargada",
-      text: `La Receta "${recetas.nombreRecetas}" no pudo ser creada, intentelo mas tarde!`,
-      icon: "error"
-    });
+const cargarRecetas = async ()=>{
+  const respuesta = await obtenerRecetaAPI(id)
+  if(respuesta.status === 200){
+    const recetaBuscada = await respuesta.json();
+    setValue('nombreRecetas', recetaBuscada.nombreRecetas);
+    setValue('imagen', recetaBuscada.imagen);
+    setValue('ingredientes', recetaBuscada.ingredientes);
+    setValue('instrucciones', recetaBuscada.instrucciones);
+    setValue('descripcion', recetaBuscada.descripcion);
   }
-};
+}
+
+  const onSubmit = async recetas => {
+    if (editar) {
+
+    } else {
+      const respuesta = await altaDeRecetasApi(recetas);
+
+      if (respuesta.status === 201) {
+        Swal.fire({
+          title: "Receta Cargada!",
+          text: `La Receta "${recetas.nombreRecetas}" fue cargada correctamente`,
+          icon: "success",
+        });
+        // limpiar formulario
+        reset();
+      } else {
+        Swal.fire({
+          title: "Receta no cargada",
+          text: `La Receta "${recetas.nombreRecetas}" no pudo ser creada, intentelo mas tarde!`,
+          icon: "error",
+        });
+      }
+    }
+  };
 
   return (
     <>
-      <h1 className=" text-center"> Nuevas Recetas </h1>
+      <h1 className=" text-center">{titulo}</h1>
       <Form
         className="container py-4 form-bg "
         onSubmit={handleSubmit(onSubmit)}

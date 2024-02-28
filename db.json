@@ -1,5 +1,14 @@
 {
-  "Recetas": [],
+  "Recetas": [
+    {
+      "id": "b82e",
+      "nombreRecetas": "reaaaa",
+      "imagen": "https://kelehome.com/wp-content/uploads/Tendencias-2024_01.png",
+      "ingredientes": "aaaaaaaa",
+      "instrucciones": "aaaaaaaaaaa",
+      "descripcion": "aaaaaaaaaaaaa"
+    }
+  ],
   "usuarios": [
     {
       "email": "admin@mail.com",
