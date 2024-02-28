@@ -2,7 +2,7 @@ import { Form, Button, Container, Card } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { iniciarSesion } from "../../helpers/queris";
 import Swal from "sweetalert2";
-import { useNavigate, useNavigation } from "react-router";
+import { useNavigate, } from "react-router";
 
 
 const Login = () => {
@@ -34,7 +34,7 @@ const Login = () => {
   };
 
   return (
-    <Container className=" ">
+    <Container className="card-login">
       <Card className="my-5 border-1">
         <Card.Header as="h5">Login</Card.Header>
         <Card.Body>
