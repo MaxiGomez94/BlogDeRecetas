@@ -75,7 +75,7 @@ const FormRecipes = () => {
               },
               maxLength: {
                 value: 100,
-                message: "maximo permitido es de 20",
+                message: "maximo permitido es de 100",
               },
             })}
           />

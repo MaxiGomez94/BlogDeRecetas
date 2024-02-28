@@ -49,12 +49,12 @@ const Admin = () => {
       </thead>
       <tbody>
         {
-          receta.map((receta)=> <ItemRecipes key={receta} receta={receta} />)
+          receta.map((receta)=> <ItemRecipes key={receta.id} receta={receta} funcionSetReceta={setReceta} />)
         }
       </tbody>
     </Table>
     </Container>
   );
 };
-
+ 
 export default Admin;
