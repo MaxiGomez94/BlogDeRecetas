@@ -1,9 +1,10 @@
 import { Form, Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
-import { altaDeRecetasApi, obtenerRecetaAPI } from "../../helpers/queris";
+import { altaDeRecetasApi, modificarRecetaAPI, obtenerRecetaAPI } from "../../helpers/queris";
 import Swal from "sweetalert2";
 import { useEffect } from "react";
-import { useParams } from "react-router";
+import { useNavigate, useParams } from "react-router";
+
 
 const FormRecipes = ({ editar,titulo }) => {
   const {
@@ -16,6 +17,7 @@ const FormRecipes = ({ editar,titulo }) => {
   } = useForm();
 
 const {id}= useParams();
+const redireccionAdmin = useNavigate();
 
 useEffect(()=>{
 if(editar){
@@ -38,6 +40,21 @@ const cargarRecetas = async ()=>{
 
   const onSubmit = async recetas => {
     if (editar) {
+     const respuesta= await modificarRecetaAPI(recetas,id);
+     if(respuesta.status === 200){
+      Swal.fire({
+        title: "Receta modificada!",
+        text: `La Receta "${recetas.nombreRecetas}" fue modificada correctamente`,
+        icon: "success",
+      });
+      redireccionAdmin('/admin');
+     }else{
+      Swal.fire({
+        title: "Error al modificar!",
+        text: `La Receta "${recetas.nombreRecetas}" no pudo ser moficada intente mas tarde`,
+        icon: "error",
+      });
+     }
 
     } else {
       const respuesta = await altaDeRecetasApi(recetas);

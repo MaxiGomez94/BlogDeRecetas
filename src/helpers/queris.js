@@ -12,7 +12,7 @@ export const altaDeRecetasApi = async recetaNueva => {
     });
     return respuesta;
   } catch (error) {
-    console.log(error);
+   
   }
 };
 //GET PARA OBTENER
@@ -21,7 +21,7 @@ export const mostraRecetaAPI = async () => {
     const respuesta = await fetch(API_receta);
     return respuesta;
   } catch (error) {
-    console.log(error);
+    
   }
 };
 
@@ -34,7 +34,7 @@ export const borrarRecetaAPI = async (id) => {
     });
     return respuesta;
   } catch (error) {
-    console.log(error);
+    
   }
 };
 
@@ -45,7 +45,20 @@ export const obtenerRecetaAPI = async (id) => {
       });
       return respuesta
     } catch (error) {
-      console.log(error);
     }
   };
   
+  export const modificarRecetaAPI = async(recetaEdit,id)=>{
+    try {
+        
+        const respuesta = await fetch(`${API_receta}/${id}`,{
+            method: "PUT",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(recetaEdit),
+        })
+        return respuesta
+    } catch (error) {
+    }
+  }
