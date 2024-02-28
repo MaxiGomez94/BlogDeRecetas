@@ -21,7 +21,9 @@
 
 ## Instalar Dependencias
 1.** nmp i 
+
 2.** nmp install
+
 3.** npm install json-server
 
 <hr>
