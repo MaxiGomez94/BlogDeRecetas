@@ -1,4 +1,4 @@
-# Blog de Cocina con React y JSON Server
+# Blog  Recetas de Cocina con React y JSON Server
 
 ¡Bienvenido al Blog de Cocina! Este proyecto es un sitio web de blogs de cocina desarrollado con React y utiliza JSON Server como backend simulado para almacenar datos de recetas.
 
