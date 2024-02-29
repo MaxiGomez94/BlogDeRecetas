@@ -92,12 +92,16 @@ const cargarRecetas = async ()=>{
             {...register("nombreRecetas", {
               required: "No ingresaste Una Receta",
               minLength: {
-                value: 4,
-                message: "minimo de caracter es de 4",
+                value: 5,
+                message: "Minimo de Caracteres permito es de 5",
               },
               maxLength: {
-                value: 20,
-                message: "maximo permitido es de 20",
+                value: 30,
+                message: "Maximo  Caracteres permitido es de 40",
+              },
+              pattern: {
+                value: /^[A-Za-záéíóúüñÁÉÍÓÚÜÑ\s.,;:'"()¡!¿?]+$/,  // Ajusta los caracteres especiales según tus necesidades
+                message: "Ingresa solo texto y algunos caracteres especiales, sin números",
               },
             })}
           />
@@ -110,17 +114,21 @@ const cargarRecetas = async ()=>{
           <Form.Label>Ingresa la URL de imagen:</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Ingresa una URL: WWW. IMG.COM"
+            placeholder="Ingresa una URL:"
             {...register("imagen", {
-              required: "No ingresaste Una imagen",
+              required: "Este campo es Obligatio",
               minLength: {
-                value: 4,
-                message: "minimo de caracter es de 4",
+                value: 10,
+                message: "Minimo de Caracteres Permitido es de 10",
               },
               maxLength: {
-                value: 100,
-                message: "maximo permitido es de 100",
+                value: 250,
+                message: "Maximo de Caracteres  Permitido es de 250",
               },
+              pattern: {
+                value: /\.(jpeg|jpg|gif|png)$/i,
+                message: "Ingresa una URL válida de imagen (jpeg, jpg, gif, png)"
+              }
             })}
           />
           <Form.Text className="text-danger">
@@ -134,14 +142,14 @@ const cargarRecetas = async ()=>{
             as="textarea"
             placeholder="Ingresa los ingredientes"
             {...register("ingredientes", {
-              required: "No ingresaste los ingredientes",
+              required: "No ingresaste los ingredientes de la receta",
               minLength: {
                 value: 4,
-                message: "minimo de caracter es de 4",
+                message: "Minimo de caracteres Permitido es de 4",
               },
               maxLength: {
                 value: 200,
-                message: "maximo permitido es de 20",
+                message: "Maximo Caracteres Permitido es de 200",
               },
             })}
           />
