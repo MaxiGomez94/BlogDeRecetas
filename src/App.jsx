@@ -1,7 +1,7 @@
 import Home from './components/Home'
 import Footer from './components/Footer'
 import NavegationMenu from './components/NavegationMenu'
-import { BrowserRouter,Route,Routes } from 'react-router-dom'
+import {HashRouter,Route,Routes } from 'react-router-dom'
 import FormRecipes from './components/pages/FormRecipes'
 import './App.css'
 import Admin from './components/pages/Admin'
@@ -11,7 +11,7 @@ import Register from './components/pages/Register'
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
     <NavegationMenu></NavegationMenu>
       <main>
     <Routes>
@@ -24,7 +24,7 @@ function App() {
     </Routes>
       </main> 
     <Footer></Footer>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
